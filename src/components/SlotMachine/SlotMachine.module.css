@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .pointsDisplay {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .points {
+    font-weight: bold;
+    color: #ffeaa7;
+  }
+  
+  .points span {
+    color: #dfe6e9;
+    font-size: 0.9rem;
+  }
+  
+  .info {
+    font-size: 0.8rem;
+    color: #b2bec3;
+  }
+  
+  .slots {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .slot {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    background: linear-gradient(145deg, #3d4452, #2c3038);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .winnerMessage {
+    color: var(--success-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    animation: bounce 0.5s infinite alternate;
+    text-align: center;
+  }
+  
+  .message {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+  }
+  
+  .success {
+    background-color: rgba(0, 184, 148, 0.2);
+    color: var(--success-color);
+  }
+  
+  .error {
+    background-color: rgba(214, 48, 49, 0.2);
+    color: var(--error-color);
+  }
+  
+  .actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .spinButton {
+    padding: 0.75rem 2rem;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    transition: var(--transition);
+  }
+  
+  .spinButton:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .resetButton {
+    padding: 0.75rem 2rem;
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+  }
+  
+  .resetButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  
