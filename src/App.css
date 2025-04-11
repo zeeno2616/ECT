@@ -26,15 +26,17 @@ h1 {
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .tabs button {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   background-color: var(--card-background);
   color: var(--text-color);
   border: none;
   border-radius: var(--border-radius);
   transition: var(--transition);
+  font-size: 0.9rem;
 }
 
 .tabs button:hover {
@@ -52,6 +54,7 @@ h1 {
   padding: 2rem;
   box-shadow: var(--box-shadow);
   flex: 1;
+  overflow: auto;
 }
 
 .state-display {
@@ -67,4 +70,3 @@ h1 {
 .state-display div {
   margin: 0.5rem 0;
 }
-
